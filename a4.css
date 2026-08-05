@@ -1,0 +1,86 @@
+
+.gallery{
+    padding:60px;
+    text-align:center;
+}
+
+.gallery h1{
+    font-size:45px;
+    color:#8B0000;
+    margin-bottom:40px;
+}
+
+.gallery-images{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-images img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-images img:hover{
+    transform:scale(1.05);
+}
+img{
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+footer{
+    background: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .cards,
+    .menu-cards,
+    .gallery-images,
+    .about-content,
+    .contact-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-image img{
+        width:100%;
+    }
+
+    .contact-form,
+    .contact-info{
+        width:100%;
+    }
+
+}

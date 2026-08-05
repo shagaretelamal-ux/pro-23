@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+ul{
+    list-style: none;
+}
+header{
+
+    background:#8B0000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+nav ul li a:hover{
+    color:#FFD700;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: #8B0000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #b30000;
+}
+
+.hero-image img{
+    width: 450px;
+    border-radius: 15px;
+}
+.popular{
+    padding: 60px;
+    text-align: center;
+}
+
+.popular h2{
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3{
+    margin: 15px 0;
+}
+.why-us{
+    padding: 60px;
+    text-align: center;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+img{
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+footer{
+    background: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .cards,
+    .menu-cards,
+    .gallery-images,
+    .about-content,
+    .contact-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-image img{
+        width:100%;
+    }
+
+    .contact-form,
+    .contact-info{
+        width:100%;
+    }
+
+}
